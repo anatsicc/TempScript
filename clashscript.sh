@@ -72,7 +72,8 @@ function open_proxy(){
     export https_proxy=$http_proxy
     echo -e "Proxy On"
 }
-
+# set HTTP_PROXY=http://127.0.0.1:7890 win
+# set HTTPS_PROXY=http://127.0.0.1:7890
 function close_proxy(){
     unset http_proxy
     unset https_proxy
