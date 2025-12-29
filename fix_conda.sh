@@ -61,7 +61,8 @@ if [ -f "$CONDA_EXE" ]; then
 
     # 重新安装 openssl, 有个错误
     echo "正在重新安装base环境的openssl..."
-    "$CONDA_EXE" install -y openssl
+    "$CONDA_EXE" install -y --force-reinstall openssl
+
     
     echo "---------------------------------------"
     echo "配置完成！"
